@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div v-if="center !== null" class="col-md-12">
-      <gmap-map :center="center" :zoom="12" style="width:100%;  height: 300px;">
+      <gmap-map :center="center" :zoom="12" style="width:100%; height: 300px;">
         <gmap-marker
           :key="index"
           v-for="(m, index) in markers"
@@ -9,6 +9,9 @@
           @click="center=m.position"
         ></gmap-marker>
       </gmap-map>
+    </div>
+    <div v-else style="width:100%; height: 300px;padding-top: 120px;">
+      <h1 align="center">Select Address or Add Address to Load Map Here</h1>
     </div>
   </div>
 </template>

@@ -1,7 +1,8 @@
 <template>
   <div class="row">
-    <div class="col-md-12">
-      <div class="row" style="margin-top: 10px;">
+    <div class="col-md-1">&nbsp;</div>
+    <div class="col-md-10">
+      <div v-if="!(paginator.prev_page_url === null && paginator.next_page_url === null)" class="row" style="margin-top: 10px;">
         <div class="col-md-12">
           <button
             @click="loadNextPage"

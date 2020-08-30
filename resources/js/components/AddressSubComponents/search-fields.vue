@@ -2,7 +2,8 @@
   <div class="row" style="margin-top: 20px;">
     <div class="col-md-12">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-4">
           <input
             list="suggestions"
             @change="selectAddress"
@@ -41,6 +42,7 @@
         </div>
       </div>
       <div class="row" style="margin-top: 10px;">
+        <div class="col-md-1">&nbsp;</div>
         <div class="col-md-2" v-for="(propertyType, index) in property_types" :key="index">
           <label :for="propertyType">
             <img
@@ -62,6 +64,7 @@
         </div>
       </div>
       <div class="row" style="margin-top: 40px;text-align: right;">
+        <div class="col-md-1">&nbsp;</div>
         <div class="col-md-10">
           <button @click="addAddress" class="btn btn-primary">Add Address</button>
         </div>
